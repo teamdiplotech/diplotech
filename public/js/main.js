@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       body: JSON.stringify({
         to: number,
-        body: `Hola ${name}, pronto alguno de nuestros asesores se comunicará contigo al ${number}. Crea tu cuenta en https://diplotech.github.io/public/home.html. Saludos de parte del team DiploTech.`
+        body: `Hola ${name}, pronto alguno de nuestros asesores se comunicará contigo al ${number}. Crea tu cuenta en https://teamdiplotech.github.io/public/home.html. Saludos de parte del team DiploTech.`
       })
     })
     .then(response => response.json())
