@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var name = document.getElementById('name').value;
     var mail = document.getElementById('mail').value;
     var number = phoneInput.getNumber();
-    fetch('https://thawing-mesa-75969-77a2012df85e.herokuapp.com/send-whatsapp', {
+    fetch('https://stormy-shore-91268-66b247c96421.herokuapp.com//send-whatsapp', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     })
     .catch(error => console.error('Error:', error));
-    fetch('https://thawing-mesa-75969-77a2012df85e.herokuapp.com/send-email', {
+    fetch('https://stormy-shore-91268-66b247c96421.herokuapp.com//send-email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
