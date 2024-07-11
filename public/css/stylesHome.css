@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+    background-color: #f8d7da;
+    color: #721c24;
+}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+.important {
+    font-weight: bold;
+    color: #d63333;
+}
+.tips {
+    text-align: left;
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 600px;
+}
+.tips li {
+    margin-bottom: 10px;
+}

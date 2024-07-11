@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <title>Diplotech</title>
+    <link rel="icon" href="public/images/icon.png" type="image/png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script type="text/javascript" src="public/js/main.js" defer></script>
+</head>
+<body>
+    <header id="header">
+        <div id="leftHeader">
+            <img class="imageLogo" src="public/images/logo.png" alt="logo">
+            <div class="logo"><b>Diplo</b><i>Tech</i></div>
+            <div id="title">Diplomado de Innovación en Gestión de Proyectos</div>
+            <div id="description">
+                El diplomado de innovación en gestión de proyectos tiene como objetivo formar profesionales capaces de afrontar retos para crear, mejorar y perfeccionar diversos procesos en el ámbito de gestión de proyectos.
+                <div id="divisionHeader"></div>
+            </div>
+            <p id="date">Fechas de inicio:</p>
+            <div id="data">
+                <p class="data">06 de febrero y 06 de agosto</p>
+                <div id="months" class="data"><img src="public/images/calendar.png" alt="calendar">3 meses</div>
+                <div id="modules" class="data"><img src="public/images/books.png" alt="modules">7 módulos</div>
+            </div>
+        </div>
+        <div id="rightHeader">
+            <form id="contactForm">
+                <p>¡Empieza tu proceso!</p>
+                <label for="name">Nombre(s):</label>
+                <input type="text" id="name" name="name" placeholder="ej. Juan Antonio" required><br>
+                <label for="lastName">Apellido(s):</label>
+                <input type="text" id="lastName" name="lastName" placeholder="ej. Martínez Reyes" required><br>
+                <label for="mail">Correo electrónico:</label>
+                <input type="email" id="mail" name="mail" placeholder="ej. juanmartinez@correo.com" required><br>
+                <label for="number">Teléfono:</label>
+                <input type="tel" id="number" name="number" placeholder="ej. 5512345678" required><br>
+                <label for="send" id="confirmationMessage">Message</label>
+                <input type="submit" value="Enviar" id="send">
+            </form>
+        </div>
+    </header>
+    <nav id="menu">
+        <div class="sectionMenu"><a class="linkMenu" href="#program">Programa</a></div>
+        <div class="sectionMenu"><a class="linkMenu" href="#entry">Ingreso</a></div>
+        <div class="sectionMenu"><a class="linkMenu" href="#egress">Egreso</a></div>
+        <div class="sectionMenu"><a class="linkMenu" href="#methodology">Metodología</a></div>
+        <div class="sectionMenu"><a class="linkMenu" href="#studies">Plan currícular</a></div>
+    </nav>
+    <div id="general">
+        <section id="program">
+            <div class="sectionTitle">
+                <div class="arrows">
+                    <img src="public/images/arrow.png" alt="up">
+                    <img src="public/images/arrow.png" alt="down" id="down">
+                </div>
+                <div class="links">
+                    <a href="#header" class="link"></a>
+                    <a href="#entry" class="link"></a>
+                </div>
+                <p>Conoce tu programa</p>
+                <div class="divisionTitle" id="divisionProgram"></div>
+            </div> 
+            <div class="bodyProgram">
+                El diplomado de Innovación en Gestión de Proyectos fue creado para profesionales:
+                <ul>
+                    <li>De áreas administrativas.</li>
+                    <li>De áreas de producción de proyectos.</li>
+                    <li>Que buscan inovar en sus instituciones usando la tecnología para mejorar procesos.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="entry">
+            <div class="sectionTitle">
+                <div class="arrows">
+                    <img src="public/images/arrow.png" alt="up">
+                    <img src="public/images/arrow.png" alt="down" id="down">
+                </div>
+                <div class="links">
+                    <a href="#program" class="link"></a>
+                    <a href="#egress" class="link"></a>
+                </div>
+                <p>Competencias de ingreso</p>
+                <div class="divisionTitle" id="divisionEntry"></div>
+            </div> 
+            <div class="bodyEntry">
+                <div class="leftProgram">
+                    <div class="elementEntry">
+                        <img class="elementEntryImage" src="public/images/user.png" alt="proactivity">
+                        <div class="subDivisionEntry"></div>
+                        <div class="elementEntryText">PROACTIVIDAD</div>
+                    </div>                            
+                    <div class="elementEntry">
+                        <img class="elementEntryImage" src="public/images/thinking.png" alt="critical thinking">
+                        <div class="subDivisionEntry"></div>
+                        <div class="elementEntryText">PENSAMIENTO CRÍTICO</div>
+                    </div>                          
+                </div>
+                <div class="rightProgram">
+                    <div class="elementEntry">
+                        <img class="elementEntryImage" src="public/images/creativity.png" alt="creativity">
+                        <div class="subDivisionEntry"></div>
+                        <div class="elementEntryText">CREATIVIDAD</div>
+                    </div> 
+                    <div class="elementEntry">
+                        <img class="elementEntryImage" src="public/images/organization.png" alt="organization">
+                        <div class="subDivisionEntry"></div>
+                        <div class="elementEntryText">ORGANIZACIÓN</div>
+                    </div>                              
+                </div>
+            </div> 
+        </section>
+        <section id="egress">
+            <div class="sectionTitle">
+                <div class="arrows">
+                    <img src="public/images/arrow.png" alt="up">
+                    <img src="public/images/arrow.png" alt="down" id="down">
+                </div>
+                <div class="links">
+                    <a href="#entry" class="link"></a>
+                    <a href="#methodology" class="link"></a>
+                </div>
+                <p>Competencias de egreso</p>
+                <div class="divisionTitle" id="divisionEgress"></div>
+            </div> 
+            <div class="bodyEgress">
+                <div class="elementEgress">
+                    <img src="public/images/teams.png" alt="teamwork" class="egressImage">
+                    <div class="elementEgressText">EQUIPOS DE TRABAJO</div>
+                </div>
+                <div class="subDivisionEgress"></div>
+                <div class="elementEgress">
+                    <img src="public/images/analize.png" alt="analize" class="egressImage">
+                    <div class="elementEgressText">ANÁLISIS DE PROBLEMAS Y TOMA DE DECISIONES</div>
+                </div>
+                <div class="subDivisionEgress"></div>
+                <div class="elementEgress">
+                    <img src="public/images/positive.png" alt="positive influence" class="egressImage">
+                    <div class="elementEgressText">INFLUENCIA POSITIVA</div>
+                </div>
+                <div class="subDivisionEgress"></div>
+                <div class="elementEgress">
+                    <img src="public/images/leadership.png" alt="leadership" class="egressImage" id="leadership">
+                    <div class="elementEgressText">LIDERAZGO</div>
+                </div>
+                <div class="subDivisionEgress"></div>
+                <div class="elementEgress">
+                    <img src="public/images/crisis.png" alt="crisis management" class="egressImage">
+                    <div class="elementEgressText">MANEJO DE CRISIS</div>
+                </div>
+            </div>
+        </section>
+        <section id="methodology">
+            <div class="sectionTitle">
+                <div class="arrows">
+                    <img src="public/images/arrow.png" alt="up">
+                    <img src="public/images/arrow.png" alt="down" id="down">
+                </div>
+                <div class="links">
+                    <a href="#egress" class="link"></a>
+                    <a href="#studies" class="link"></a>
+                </div>
+                <p>Metodología docente</p>
+                <div class="divisionTitle" id="divisionMethodology"></div>
+            </div>
+            <div class="bodyMethodology">
+                <p>Mediante un modelo de aprendizaje<b> ONLINE</b></p>
+                <div class="featuresMethodology">
+                    <div class="featureMethodology">
+                        <img src="public/images/materials.png" alt="materials" class="featureImage">
+                        <div class="featureText">Materiales de estudio didácticos</div>
+                    </div>
+                    <div class="featureMethodology">
+                        <img src="public/images/classes.png" alt="classes" class="featureImage"  id="featureClasses">
+                        <div class="featureText">Clases magistrales</div>
+                    </div>
+                    <divsss class="featureMethodology">
+                        <img src="public/images/cases.png" alt="study cases" class="featureImage">
+                        <div class="featureText">Casos de estudio y de refuerzo</div>
+                    </divsss>
+                    <div class="featureMethodology">
+                        <img src="public/images/platform.png" alt="platform" class="featureImage">
+                        <div class="featureText">Plataforma de aprendizaje virtual</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="studies">
+            <div class="sectionTitle">
+                <div class="arrows">
+                    <img src="public/images/arrow.png" alt="up">
+                    <img src="public/images/arrow.png" alt="down" id="down">
+                </div>
+                <div class="links">
+                    <a href="#methodology" class="link"></a>
+                    <a href="#footer" class="link"></a>
+                </div>
+                <p>Plan currícular</p>
+                <div class="divisionTitle" id="divisionStudies"></div>
+            </div>
+            <div class="bodyStudies">
+                <div class="leftStudies">
+                    <div class="first">Gestión y administración</div>
+                    <div class="second">Tecnologías de la información</div>
+                    <div class="third">Humanidades</div>
+                </div>
+                <div class="rightStudies">
+                    <div class="table">
+                        <div class="elementTable">
+                            <p>1°</p>
+                            <div class="purple"></div>
+                            <div class="green"></div>
+                            <div class="blue"></div>
+                        </div>                            
+                        <div class="elementTable">
+                            <p>2°</p>
+                            <div class="green"></div>
+                            <div class="purple double"></div>
+                        </div>                        
+                        <div class="elementTable">
+                            <p>3°</p>
+                            <div class="purple double"></div>
+                            <div class="blue"></div>
+                        </div>                            
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="footer">
+        <div class="infoFooter">
+            <div class="logoFooter">
+                <img class="imageLogo" src="public/images/logo.png" alt="logo">
+                <div class="logo"><b>Diplo</b><i>Tech</i></div>
+            </div>
+            <div class="contact">
+                <p>Contacto</p><br>
+                800 7823 92 73 <br>
+                teamdiplotech@outlook.com
+            </div>
+        </div>
+        <div class="notice">
+            SE PROHÍBE LA REPRODUCCIÓN TOTAL O PARCIAL DEL SITIO O CUALQUIER CONTENIDO DEL MISMO. D.R.© DIPLOTECH , MÉXICO. 2023 AVE. SANTA FÉ 104 NTE. COL. CALETTO C.P. 84598 | GUADALAJARA, JALISCO | MÉXICO.
+        </div>
+    </div>
+</body>
+</html>
