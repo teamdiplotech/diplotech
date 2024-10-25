@@ -7,10 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Evita que el formulario se envíe de la manera tradicional
+    document.getElementById('confirmationMessage').innerText = 'Espera un momento, tus datos están siendo enviados';
+    document.getElementById('confirmationMessage').style.color = 'black';
     var name = document.getElementById('name').value;
     var mail = document.getElementById('mail').value;
     var number = phoneInput.getNumber();
-    fetch('https://stormy-shore-91268-66b247c96421.herokuapp.com//send-whatsapp', {
+    fetch('https://diplotech-40e217e86990.herokuapp.com/send-whatsapp', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -23,16 +25,13 @@ document.addEventListener('DOMContentLoaded', function() {
     .then(response => response.json())
     .then(data => {
       if (data.success) {
-        document.getElementById('confirmationMessage').style.display = 'block';
-        setTimeout(function() {
-          document.getElementById('confirmationMessage').style.display = 'none';
-        }, 10000);
+        console.log('Mensaje enviado exitosamente!', data.status, data.text);
       } else {
         console.error('Error al enviar el mensaje de WhatsApp');
       }
     })
     .catch(error => console.error('Error:', error));
-    fetch('https://stormy-shore-91268-66b247c96421.herokuapp.com//send-email', {
+    fetch('https://diplotech-40e217e86990.herokuapp.com/send-email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
